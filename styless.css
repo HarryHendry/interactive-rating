@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Overpass", sans-serif; */
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+}
+
+.submit-card {
+    margin: 200px auto 0 auto;
+    height: 350px;
+    width: 350px;
+    padding: 30px;
+    background-color: var(--Dark-Blue);
+    border-radius: 40px;
+}
+
+.submit-card h3 {
+    color: var(--White);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.submit-card p {
+    margin-bottom: 15px;
+    
+}
+
+
+
+.thankyou-card {
+    height: 350px;
+    width: 350px;
+   text-align: center;
+   padding: 30px;
+    margin: 200px auto 0 auto;
+    background-color: var(--Dark-Blue);
+    border-radius: 40px;
+}
+
+.thankyou-card img {
+    margin-bottom: 15px;
+}
+
+.thankyou-card p:first-child {
+    margin-bottom: 15px;
+    color: var(--Orange);
+    background-color: hsl(216, 17%, 11%);
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.thankyou-card h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--White);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(216, 17%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+background-color: var(--White);
+color: var(--Very-Dark-Blue);
+}
+.circle.clicked {
+    background-color: var(--Orange); 
+    color: var(--Very-Dark-Blue);
+}
+
+
+button {
+    border: none;
+    background-color: var(--Orange);
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Overpass", sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--White);
+    cursor: pointer;
+}
+#hidden {
+    display: none;
+}
+
+.attribution {
+    margin-top: 100px;
+    text-align: center;
+}
